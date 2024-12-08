@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: server-service
-          image: mraxel01/MajesticCup
+          image: mraxel01/majesticcup
           imagePullPolicy: Always
 ---
 apiVersion: v1
