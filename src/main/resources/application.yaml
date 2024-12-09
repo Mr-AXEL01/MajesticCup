@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: MAJESTICCUP
+
+  profiles:
+    default: dev
+    active:
+
+---
+
+  logging:
+    level:
+      org:
+        springframework:
+          security: trace
