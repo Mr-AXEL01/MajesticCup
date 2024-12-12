@@ -1,14 +1,24 @@
 package net.axel.majesticcup.domain.entities;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+import org.bson.types.ObjectId;
 
-@Document(collection = "players")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
 public class Player {
-    @Id
-    private String id;
+
+    private ObjectId id;
+
     private String name;
+
     private String surname;
+
     private String position;
+
     private Integer number;
 }

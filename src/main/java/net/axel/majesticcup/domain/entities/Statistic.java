@@ -1,11 +1,18 @@
 package net.axel.majesticcup.domain.entities;
 
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+import org.bson.types.ObjectId;
 
-@Document(collection = "statistics")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
 public class Statistic {
 
-    private String playerId;
+    private ObjectId playerId;
 
     private Integer goals;
 
