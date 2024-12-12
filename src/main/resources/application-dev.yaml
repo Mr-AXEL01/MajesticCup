@@ -4,6 +4,7 @@ spring:
       uri: mongodb://localhost:27017/${DB_NAME}
       username: ${DB_USERNAME}
       password: ${DB_PASSWORD}
+      database: ${DB_NAME}
 
 logging:
   level:
